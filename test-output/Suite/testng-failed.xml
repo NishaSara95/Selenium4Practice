@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="firefox Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="DemoPracticeSelenium.InterviewExample">
+        <methods>
+          <include name="driverInitialize" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- DemoPracticeSelenium.InterviewExample -->
+    </classes>
+  </test> <!-- firefox Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Edge Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="DemoPracticeSelenium.InterviewExample">
+        <methods>
+          <include name="driverInitialize" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- DemoPracticeSelenium.InterviewExample -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
